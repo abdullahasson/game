@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Games</title>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="stop" class="stopped">
+        <h1>finich</h1>
+        <i class="bx"></i>
+        <h2></h2>
+    </div>
+    <div class="container">
+        <div class="user-info">
+            <div class="user-name">
+                <h4>Hello : <span></span></h4>
+            </div>
+            <div class="time">
+                <h4><span>0</span></h2>
+            </div>
+            <div class="wrong">
+                <h4>Wrong Tries : <span></span></h4>
+            </div>
+        </div>
+        <div class="content-game">
+            <div class="card" data-card = "one">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./imgs/تنزيل (6).png" alt="">
+                </div>
+            </div>
+            <div class="card" data-card = "one">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./imgs/تنزيل (6).png" alt="">
+                </div>
+            </div>
+            <div class="card" data-card = "three">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./imgs/تنزيل (1).png" alt="">
+                </div>
+            </div>
+            <div class="card" data-card = "eee">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./imgs/تنزيل (5).png" alt="">
+                </div>
+            </div>
+            <div class="card" data-card = "four">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./imgs/تنزيل (7).png" alt="">
+                </div>
+            </div>
+            <div class="card" data-card = "five">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./imgs/تنزيل (2).png" alt="">
+                </div>
+            </div>
+            <div class="card" data-card = "three">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./imgs/تنزيل (1).png" alt="">
+                </div>
+            </div>
+            <div class="card" data-card = "five">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./imgs/تنزيل (2).png" alt="">
+                </div>
+            </div>
+            <div class="card" data-card = "eee">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./imgs/تنزيل (5).png" alt="">
+                </div>
+            </div>
+            <div class="card" data-card = "six">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./imgs/تنزيل (8).png" alt="">
+                </div>
+            </div>
+            <div class="card" data-card = "eight">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./imgs/تنزيل (3).png" alt="">
+                </div>
+            </div>
+            <div class="card" data-card = "seven">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./imgs/تنزيل.png" alt="">
+                </div>
+            </div>
+            <div class="card" data-card = "six">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./imgs/تنزيل (8).png" alt="">
+                </div>
+            </div>
+            <div class="card" data-card = "seven">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./imgs/تنزيل.png" alt="">
+                </div>
+            </div>
+            <div class="card" data-card = "nine">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./imgs/images.png" alt="">
+                </div>
+            </div>
+            <div class="card" data-card = "two">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./imgs/تنزيل (4).png" alt="">
+                </div>
+            </div>
+            <div class="card" data-card = "nine">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./imgs/images.png" alt="">
+                </div>
+            </div>
+            <div class="card" data-card = "two">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./imgs/تنزيل (4).png" alt="">
+                </div>
+            </div>
+            <div class="card" data-card = "eight">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./imgs/تنزيل (3).png" alt="">
+                </div>
+            </div>
+            <div class="card" data-card = "four">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="./imgs/تنزيل (7).png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>   
+    <audio id="success" src="./audio/notification-for-game-scenes-132473.mp3" preload="auto"></audio>
+    <audio id="fainalsuccess" src="./audio/tada-fanfare-a-6313.mp3" preload="auto"></audio>
+
+
+    <audio id="fail" src="./audio/negative_beeps-6008.mp3" preload="auto"></audio>
+    <audio id="fainalfail" src="./audio/failfare-86009.mp3"></audio>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+    <script src="./main.js"></script> 
+</body>
+</html>
