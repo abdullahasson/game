@@ -36,7 +36,7 @@ setTimeout(async () => {
 
 
 // Function to creat a timer
-let sec = 60
+let sec = 80
 function time() {  
     setInterval(() => {
         if (sec > 0) {
