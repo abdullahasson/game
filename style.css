@@ -10,47 +10,6 @@ body {
   background-color: #ccc;
   position: relative;
 }
-body .message {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  box-shadow: 0px 0vmax 100vmax 100vmax #777;
-  z-index: 999;
-  background-color: white;
-  text-align: center;
-  padding: 20px;
-  transform: translate(-50%, -50%);
-  border-radius: 20px;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  display: none;
-}
-body .message h1 {
-  margin-bottom: 14px;
-}
-body .message form {
-  display: flex;
-  flex-direction: column;
-}
-body .message form label {
-  margin-bottom: 8px;
-  font-weight: 600;
-}
-body .message form input {
-  outline: none;
-  padding: 4px;
-}
-body .message form input[type=submit] {
-  width: 50%;
-  margin: 12px auto 0;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  cursor: pointer;
-  padding: 10px;
-  background: #bbb9b9;
-}
 body .stopped {
   position: absolute;
   left: 50%;
@@ -84,14 +43,13 @@ body .container {
   align-items: center;
   width: 800px;
   margin: 0 auto;
-  background-color: #eee;
 }
 body .container .user-info {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  background-color: #969696;
+  background-color: #ffffff;
   padding: 20px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -131,10 +89,14 @@ body .container .content-game .card .face {
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
 }
 body .container .content-game .card .back {
   background-color: #ca0000;
   transform: rotateY(180deg);
+  border-radius: 10px;
+  overflow: hidden;
 }
 body .container .content-game .card .back img {
   width: 140px;
